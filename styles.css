@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.7;
+  padding-top: 80px;
+}
+
+/* --- NAV --- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  z-index: 1000;
+  box-shadow: 0 0 10px #0ff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0 1.2rem;
+}
+
+nav ul li a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* --- CONTAINERS --- */
+header, section, footer {
+  max-width: 900px;
+  margin: auto;
+  background-color: #1a1a1a;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);
+}
+
+/* --- HEADER --- */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #0ff, #00f7ff);
+  color: #000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* --- SECTIONS --- */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0ff;
+  border-left: 4px solid #0ff;
+  padding-left: 10px;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* --- SKILLS --- */
+ul.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.grid li {
+  background-color: #111;
+  color: #0ff;
+  padding: 0.6rem 1rem;
+  border: 1px solid #0ff;
+  border-radius: 8px;
+  font-weight: 500;
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+/* --- LINKS --- */
+a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  background-color: #111;
+  color: #0ff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #0ff;
+}
+
+/* --- SCROLL OFFSET --- */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+.foto-perfil {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #0ff;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Redes sociales en el footer */
+.redes {
+  margin-top: 1rem;
+}
+
+.redes a {
+  color: #0ff;
+  margin: 0 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.redes a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.redes i {
+  margin-right: 5px;
+}

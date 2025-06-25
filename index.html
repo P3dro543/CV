@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum - Pedro Romero</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-YzZsbks1N7sVRyjc9Zt2vC9owfsjbAUOIGMBjvA+rkE6TPIfpQfKZCNzOlW+WH8pA1kx4GPHArQ9QCE3Qj4GpQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#habilidades">Conocimientos</a></li>
+      <li><a href="#idiomas">Idiomas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio">
+    <!-- Foto de perfil -->
+    <img src="Foto.jpeg" alt="Foto de Pedro Romero" class="foto-perfil">
+    <h1>Pedro Romero</h1>
+    <p>Desarrollador Full-Stack · Estudiante en Sistemas de Información</p>
+  </header>
+
+  <section id="perfil">
+    <h2>Perfil Profesional</h2>
+    <p>Estudiante costarricense de Tecnologías de la Información, apasionado por la programación y el desarrollo de software. Con conocimientos sólidos en desarrollo web y backend, así como experiencia académica en proyectos reales usando diversas tecnologías.</p>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <ul>
+      <li><strong>ConectaOficios (2025):</strong> Plataforma de servicios desarrollada en Node.js con Express y SQL Server. Gestión de usuarios por roles (admin, cliente, oferente), CRUD completo y filtrado dinámico.</li>
+      <li><strong>NutrsFit (2025):</strong> Sistema de cálculo de IMC en Python + Tkinter con manejo de hilos, exportación de datos en JSON/XML, interfaz gráfica y funciones CRUD.</li>
+    </ul>
+  </section>
+
+  <section id="educacion">
+    <h2>Educación</h2>
+    <p><strong>Colegio Universitario de Cartago</strong><br>
+    Diplomado en Tecnologías de la Información (2023 - 2025)</p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Conocimientos Técnicos</h2>
+    <ul class="grid">
+      <li>C#</li><li>.NET</li><li>Java</li><li>Python</li>
+      <li>JavaScript</li><li>SQL</li><li>MongoDB</li><li>Git</li>
+    </ul>
+  </section>
+
+  <section id="idiomas">
+    <h2>Idiomas</h2>
+    <p>Español: Nativo<br>Inglés: Nivel B2</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Correo: <a href="mailto:pedroromeroav3@gmail.com">pedroromeroav3@gmail.com</a><br>
+    Teléfono: <a href="tel:+50664107683">+506 6410 7683</a><br>
+    Ubicación: Cartago, Costa Rica</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pedro Romero · Hecho con cariño y código tico ☕</p>
+    <div class="redes">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const destino = document.querySelector(link.getAttribute('href'));
+        destino.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
