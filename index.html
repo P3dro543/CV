@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Currículum - Pedro Romero</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-YzZsbks1N7sVRyjc9Zt2vC9owfsjbAUOIGMBjvA+rkE6TPIfpQfKZCNzOlW+WH8pA1kx4GPHArQ9QCE3Qj4GpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#habilidades">Conocimientos</a></li>
+      <li><a href="#idiomas">Idiomas</a></li>
+      <li><a href="#acerca">Acerca de mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio" class="seccion-animada">
+    <button id="modo-toggle" aria-label="Cambiar modo">🌙</button>
+    <img src="Foto.jpeg" alt="Foto de Pedro Romero" class="foto-perfil">
+    <h1>Pedro Romero</h1>
+    <p>Desarrollador Full-Stack · Estudiante de tecnologías de la información</p>
+  </header>
+
+  <section id="perfil" class="seccion-animada">
+    <h2>Perfil Profesional</h2>
+    <p>Estudiante costarricense de Tecnologías de la Información, apasionado por la programación y el desarrollo de software. Con conocimientos sólidos en desarrollo web y backend, así como experiencia académica en proyectos reales usando diversas tecnologías.</p>
+  </section>
+
+  <section id="experiencia" class="seccion-animada">
+    <h2>Experiencia</h2>
+    <ul>
+      <li><strong>ConectaOficios (2025):</strong> Plataforma de servicios desarrollada en Node.js con Express y SQL Server. Gestión de usuarios por roles, CRUD completo y filtrado dinámico.</li>
+      <li><strong>NutrsFit (2025):</strong> Sistema de IMC en Python + Tkinter con hilos, exportación JSON/XML y GUI.</li>
+    </ul>
+  </section>
+
+  <section id="educacion" class="seccion-animada">
+    <h2>Educación</h2>
+    <p><strong>Colegio Universitario de Cartago</strong><br>
+    Diplomado en Tecnologías de la Información (2023 - 2025)</p>
+  </section>
+
+  <section id="certificaciones" class="seccion-animada">
+    <h2>Certificaciones</h2>
+    <ul>
+      <li>Certificación Inglés B2/C1 UCR (2022)</li>
+      <li>Desarrollo Web – FreeCodeCamp (2023)</li>
+      <li>CCNA: Introduction to Networks (2024)</li>
+    </ul>
+  </section>
+
+  <section id="habilidades" class="seccion-animada">
+    <h2>Conocimientos Técnicos</h2>
+    <ul class="grid">
+      <li>C#</li><li>.NET</li><li>Java</li><li>Python</li>
+      <li>JavaScript</li><li>SQL</li><li>MongoDB</li><li>Git</li><li>Node.js</li>
+    </ul>
+  </section>
+
+  <section id="habilidades-blandas" class="seccion-animada">
+    <h2>Habilidades Blandas</h2>
+    <ul class="grid">
+      <li>Comunicación asertiva</li>
+      <li>Trabajo en equipo</li>
+      <li>Pensamiento crítico</li>
+      <li>Gestión del tiempo</li>
+      <li>Adaptabilidad</li>
+      <li>Resolución de problemas</li>
+      <li>Proactividad</li>
+      <li>Responsabilidad</li>
+    </ul>
+  </section>
+
+  <section id="idiomas" class="seccion-animada">
+    <h2>Idiomas</h2>
+    <p>Español: Nativo<br>Inglés: Nivel B2</p>
+  </section>
+
+  <section id="acerca" class="seccion-animada">
+    <h2>Acerca de mí</h2>
+    <p>Soy un joven de la Zona de los Santos, orgullosamente productor y apasionado por el café. Esta conexión con el campo me enseñó a ser constante, comprometido y detallista en lo que hago.</p>
+    <p>Además, me apasiona profundamente el desarrollo de software y la tecnología. Disfruto aprender, crear soluciones útiles y crecer como profesional en el mundo tech. Siempre estoy buscando nuevos retos que me reten a ser mejor.</p>
+  </section>
+
+  <section id="mi-zona" class="seccion-animada">
+    <div class="zona-imagen">
+      <img src="zona.jpeg" alt="Vista de Los Santos">
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion-animada">
+    <h2>Contacto</h2>
+    <p>Correo: <a href="mailto:pedroromeroav3@gmail.com">pedroromeroav3@gmail.com</a><br>
+    Teléfono: <a href="tel:+50664107683">+506 6410 7683</a><br>
+    Ubicación: San José, Costa Rica</p>
+  </section>
+
+  <section id="terminal" class="seccion-animada">
+    <h2>Terminal</h2>
+    <div class="terminal-box">
+      <pre id="terminal-output">&gt; </pre>
+      <input id="terminal-input" placeholder="Escribí help para ver los comandos disponibles" />
+    </div>
+  </section>
+
+  <footer class="seccion-animada">
+    <p>© 2025 Pedro Romero · <span id="coffee-egg" title="Haz clic 😉">☕</span></p>
+    <div class="redes">
+      <a href="https://github.com/p3dro543" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const destino = document.querySelector(link.getAttribute('href'));
+        destino.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const secciones = document.querySelectorAll('.seccion-animada');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    secciones.forEach(sec => observer.observe(sec));
+
+    const botonModo = document.getElementById('modo-toggle');
+    botonModo.addEventListener('click', () => {
+      document.body.classList.toggle('tema-claro');
+      botonModo.textContent = document.body.classList.contains('tema-claro') ? '🌚' : '🌙';
+    });
+
+    document.getElementById('coffee-egg').addEventListener('click', () => {
+      alert("☕  Sabías que Pedro también cultiva su propio café en Los Santos?\nSí, y mientras el IDE compila, él tuesta. ¡Salud por el código y el buen café!");
+    });
+
+    const input = document.getElementById('terminal-input');
+    const output = document.getElementById('terminal-output');
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const cmd = input.value.trim().toLowerCase();
+        let respuesta = "";
+
+        switch (cmd) {
+          case 'help':
+            respuesta = "Comandos disponibles:\n- about\n- skills\n- educacion\n- brew\n- clear";
+            break;
+          case 'about':
+            respuesta = "Pedro Romero — Productor de café y desarrollador apasionado por el código ☕💻";
+            break;
+          case 'skills':
+            respuesta = "C#, .NET, Java, Python, JavaScript, SQL, MongoDB, Git";
+            break;
+          case 'educacion':
+            respuesta = "Colegio Universitario de Cartago – Diplomado en Tecnologías de la Información (2023 - 2025)";
+            break;
+          case 'brew':
+            respuesta = "☕ Preparando café... hecho. Listo para seguir programando.";
+            break;
+          case 'clear':
+            output.innerText = "> ";
+            input.value = "";
+            return;
+          default:
+            respuesta = `Comando no reconocido: ${cmd}`;
+        }
+
+        output.innerText += `\n> ${cmd}\n${respuesta}`;
+        input.value = "";
+      }
+    });
+  </script>
+</body>
+</html>
